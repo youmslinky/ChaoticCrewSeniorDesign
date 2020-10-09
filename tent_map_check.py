@@ -4,6 +4,11 @@ import csv
 import time
 from sys import argv,exit
 from os.path import basename
+'''
+this script takes a ltspice output text file as a command line argument.
+it plots the data as a tent map, and calculates the slope of both sides given
+user input
+'''
 
 def offset_samples(x):
     return x[:-1],x[1:]

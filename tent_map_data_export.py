@@ -4,6 +4,9 @@ import csv
 import time
 from sys import argv,exit
 from os.path import basename
+'''
+This script outputs a csv file of the sampled ltspice text data
+'''
 
 def offset_samples(x):
     return x[:-1],x[1:]
