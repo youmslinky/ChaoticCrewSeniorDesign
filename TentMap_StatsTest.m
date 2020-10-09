@@ -55,7 +55,7 @@ for j = 2:2:length(s)
         vnbits(k) = 0;
         k=k+1;
     elseif s(j-1) == 0 && s(j) == 1
-        vnbits(k)=1
+        vnbits(k)=1;
         k=k+1;
     end
 end
@@ -79,7 +79,7 @@ for j = 1:sq_LN_bits
     recurrence_plotter(1:sq_LN_bits,j) = bits_used2((j-1)*sq_LN_bits+1:j*sq_LN_bits);
 end
 image_matrix = 1-recurrence_plotter;
-imshow(imresize(image_matrix,10,'nearest'));
+imshow(imresize(image_matrix,4,'nearest'));
 
 
 clear bn;
