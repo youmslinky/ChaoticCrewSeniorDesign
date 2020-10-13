@@ -78,14 +78,22 @@ positive_slope_samples = select_x_range_samples(samples,user_pts[0,0],user_pts[1
 #plot selected samples
 ax2.plot(positive_slope_samples[:,0],positive_slope_samples[:,1],'.')
 
+text_offset = 0.01
 # fit line to selected data points
 m, b = np.polyfit(positive_slope_samples[:,0], positive_slope_samples[:,1], 1)
 print(f'slope of positive line is {m}')
 
-# plot the line
+# plot positive going line
 xx = np.linspace(user_pts[0,0],user_pts[2,0])
-ax2.plot(xx, m*xx+b)
-plt.text(user_pts[0,0]+0.1, m*user_pts[0,0]+b, f'm={m:1.5}')
+yy = m*xx+b
+ax2.plot(xx, yy)
+
+# add text for slope
+xdiff = xx[-1] - xx[0]
+ydiff = yy[-1] - yy[0]
+angle = np.rad2deg(np.arctan2(ydiff,xdiff))
+trans_angle = plt.gca().transData.transform_angles(np.array((angle,)),np.array((xx[-1],yy[-1])).reshape((1,2)) )[0]
+plt.text(user_pts[0,0]-text_offset, m*user_pts[0,0]+b+text_offset, f'm={m:1.5}', rotation=trans_angle, rotation_mode='anchor')
 
 # get selection of negative slope samples
 negative_slope_samples = select_x_range_samples(samples,user_pts[2,0],user_pts[3,0])
@@ -97,8 +105,15 @@ print(f'slope of negative line is {m}')
 
 # plot the line
 xx = np.linspace(user_pts[1,0],user_pts[3,0])
-ax2.plot(xx, m*xx+b)
-plt.text(user_pts[2,0]+0.1, m*user_pts[2,0]+b, f'm={m:1.5}')
+yy = m*xx+b
+ax2.plot(xx, yy)
+
+# add text for slope
+xdiff = xx[-1] - xx[0]
+ydiff = yy[-1] - yy[0]
+angle = np.rad2deg(np.arctan2(ydiff,xdiff))
+trans_angle = plt.gca().transData.transform_angles(np.array((angle,)),np.array((xx[-1],yy[-1])).reshape((1,2)) )[0]
+plt.text(user_pts[2,0]+text_offset, m*user_pts[2,0]+b+text_offset, f'm={m:1.5}', rotation=trans_angle, rotation_mode='anchor')
 
 
 # this was used for finding points on both plots (I was using it to find the cause of the hook on the right side)
