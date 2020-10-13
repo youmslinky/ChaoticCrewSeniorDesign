@@ -110,7 +110,7 @@ xlabel('x');
 ylabel('PDF');
 
 
-[h1,p] = runstest(bits_used);
+[h1,p1] = runstest(bits_used);
 h1;     %% ZERO == PASS : ONE == FAIL
 if h1 == 0
     fprintf('RunsTest: PASS\n')
