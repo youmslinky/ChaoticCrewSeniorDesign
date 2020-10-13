@@ -30,7 +30,7 @@ title('tent map')
 xlabel('x(n)')
 ylabel('x(n+1)')
 hold on
-plot([0,1],[0,1]);
+% plot([0,1],[0,1]);
 hold off
 
 %plot histogram of tent map data
