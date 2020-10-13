@@ -24,6 +24,7 @@ ylabel('value');
 
 %plot tent map by offsetting values
 figure;
+return_pairs = [x(1:end-1) x(2:end)];
 scatter(x(1:end-1), x(2:end));
 title('tent map')
 xlabel('x(n)')
@@ -40,7 +41,12 @@ xlabel('bins')
 ylabel('counts')
 
 %create bitstream from tent map values by partitioning map in half
-s = (x>=0.16);
+%get partition by choosing x value to make mean close to 0.5
+% fun = @(i) mean(x>=i)-0.5; partition = fzero(fun,1)
+
+%choose partition based on highest y value (should be top of graph
+[M,I] = max(return_pairs(:,2)); partition = x(I,1)
+s = (x>=partition);
 
 %calculate autocorrelation (cross correlation with itself) of bitstream
 [cc,lags] = xcorr(s-mean(s), s-mean(s), 'coeff');
