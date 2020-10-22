@@ -87,7 +87,6 @@ while len(user_pts) < 4:
 
 # import pdb; pdb.set_trace()
 # get selection of positive slope samples
-print(user_pts)
 xstart = user_pts[0, 0]
 xstop = user_pts[1, 0]
 positive_slope_samples = select_x_range_samples(samples, user_pts[0, 0], user_pts[1, 0])
