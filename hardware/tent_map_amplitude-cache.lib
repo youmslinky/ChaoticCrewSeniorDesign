@@ -1,0 +1,49 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# dk_Linear-Comparators_LM339AN
+#
+DEF dk_Linear-Comparators_LM339AN U 0 0 Y Y 4 L N
+F0 "U" -200 300 60 H V C CNN
+F1 "dk_Linear-Comparators_LM339AN" 100 -200 60 H V L CNN
+F2 "digikey-footprints:DIP-14_W3mm" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm139a" 200 300 60 H I L CNN
+F4 "296-6605-5-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LM339AN" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Linear - Comparators" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm139a" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/LM339AN/296-6605-5-ND/372806" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC QUAD DIFF COMPARATOR 14-DIP" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -225 100 25 0 1 0 f
+P 2 0 1 0 -150 -100 -100 -100 N
+P 2 0 1 0 -150 100 -100 100 N
+P 2 0 1 0 -125 -75 -125 -125 N
+P 4 0 1 0 -200 200 -200 -200 200 0 -200 200 f
+X ~ 1 300 0 100 L 50 50 1 1 O
+X GND 12 0 -200 100 U 50 50 1 1 W
+X VCC 3 0 200 100 D 50 50 1 1 W
+X ~ 6 -300 100 50 R 50 50 1 1 I
+X ~ 7 -300 -100 100 R 50 50 1 1 I
+X GND 12 0 -200 100 U 50 50 2 1 W
+X ~ 2 300 0 100 L 50 50 2 1 O
+X VCC 3 0 200 100 D 50 50 2 1 W
+X ~ 4 -300 100 50 R 50 50 2 1 I
+X ~ 5 -300 -100 100 R 50 50 2 1 I
+X GND 12 0 -200 100 U 50 50 3 1 W
+X ~ 14 300 0 100 L 50 50 3 1 O
+X VCC 3 0 200 100 D 50 50 3 1 W
+X ~ 8 -300 100 50 R 50 50 3 1 I
+X ~ 9 -300 -100 100 R 50 50 3 1 I
+X ~ 10 -300 100 50 R 50 50 4 1 I
+X ~ 11 -300 -100 100 R 50 50 4 1 I
+X GND 12 0 -200 100 U 50 50 4 1 W
+X ~ 13 300 0 100 L 50 50 4 1 O
+X VCC 3 0 200 100 D 50 50 4 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
