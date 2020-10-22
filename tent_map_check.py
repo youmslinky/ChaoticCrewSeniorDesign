@@ -40,22 +40,25 @@ fig2, ax2 = plt.subplots()
 
 
 trigger_voltage = 2.5
-last_clock = 0
+last_vclock = 0
 x = []  # sampled vc values
 tSamp = []  # times that vc is sampled at (corresponds with x)
 
-# sample vc based on vclck
+# sample vc based on every vclk transition/edge
 for row in arr:
+    t = row[0]
+    vc = row[1]
+    vclock = row[2]
     if (
-        last_clock > trigger_voltage
-        and row[2] <= trigger_voltage
-        or last_clock <= trigger_voltage
-        and row[2] > trigger_voltage
+        last_vclock > trigger_voltage
+        and vclock <= trigger_voltage
+        or last_vclock <= trigger_voltage
+        and vclock > trigger_voltage
     ):
-        x.append(row[1])
-        tSamp.append(row[0])
+        x.append(vc)
+        tSamp.append(t)
 
-    last_clock = row[2]
+    last_vclock = vclock
 
 t = arr[:, 0]
 vc = arr[:, 1]
