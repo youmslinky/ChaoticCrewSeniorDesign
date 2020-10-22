@@ -36,69 +36,29 @@ $EndComp
 $Comp
 L power:V+ #PWR?
 U 1 1 5F91267D
-P 8000 4300
-F 0 "#PWR?" H 8000 4150 50  0001 C CNN
-F 1 "V+" H 8015 4473 50  0000 C CNN
-F 2 "" H 8000 4300 50  0001 C CNN
-F 3 "" H 8000 4300 50  0001 C CNN
-	1    8000 4300
+P 8000 3900
+F 0 "#PWR?" H 8000 3750 50  0001 C CNN
+F 1 "V+" H 8015 4073 50  0000 C CNN
+F 2 "" H 8000 3900 50  0001 C CNN
+F 3 "" H 8000 3900 50  0001 C CNN
+	1    8000 3900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:V- #PWR?
 U 1 1 5F912D5A
-P 8000 5300
-F 0 "#PWR?" H 8000 5175 50  0001 C CNN
-F 1 "V-" H 8015 5473 50  0000 C CNN
-F 2 "" H 8000 5300 50  0001 C CNN
-F 3 "" H 8000 5300 50  0001 C CNN
-	1    8000 5300
+P 8000 5500
+F 0 "#PWR?" H 8000 5375 50  0001 C CNN
+F 1 "V-" H 8015 5673 50  0000 C CNN
+F 2 "" H 8000 5500 50  0001 C CNN
+F 3 "" H 8000 5500 50  0001 C CNN
+	1    8000 5500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8000 5300 8000 4950
+	8000 5500 8000 5200
 Wire Wire Line
-	8000 4300 8000 4550
-$Comp
-L dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps:TL082IP U?
-U 2 1 5F913925
-P 5950 5800
-F 0 "U?" H 6250 5500 60  0000 C CNN
-F 1 "TL082IP" H 6250 5600 60  0000 C CNN
-F 2 "digikey-footprints:DIP-8_W7.62mm" H 6150 6000 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 6150 6100 60  0001 L CNN
-F 4 "296-1781-5-ND" H 6150 6200 60  0001 L CNN "Digi-Key_PN"
-F 5 "TL082IP" H 6150 6300 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 6150 6400 60  0001 L CNN "Category"
-F 7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" H 6150 6500 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 6150 6600 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/TL082IP/296-1781-5-ND/277426" H 6150 6700 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC OPAMP JFET 2 CIRCUIT 8DIP" H 6150 6800 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 6150 6900 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 7000 60  0001 L CNN "Status"
-	2    5950 5800
-	-1   0    0    1   
-$EndComp
-$Comp
-L dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps:TL082IP U?
-U 1 1 5F91281B
-P 5950 4650
-F 0 "U?" H 6250 4950 60  0000 C CNN
-F 1 "TL082IP" H 6250 4850 60  0000 C CNN
-F 2 "digikey-footprints:DIP-8_W7.62mm" H 6150 4850 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 6150 4950 60  0001 L CNN
-F 4 "296-1781-5-ND" H 6150 5050 60  0001 L CNN "Digi-Key_PN"
-F 5 "TL082IP" H 6150 5150 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 6150 5250 60  0001 L CNN "Category"
-F 7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" H 6150 5350 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 6150 5450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/TL082IP/296-1781-5-ND/277426" H 6150 5550 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC OPAMP JFET 2 CIRCUIT 8DIP" H 6150 5650 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 6150 5750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 5850 60  0001 L CNN "Status"
-	1    5950 4650
-	-1   0    0    -1  
-$EndComp
+	8000 3900 8000 4050
 $Comp
 L power:V- #PWR?
 U 1 1 5F91B306
@@ -114,40 +74,10 @@ Wire Wire Line
 	6200 5150 5950 5150
 Connection ~ 5950 5150
 Wire Wire Line
-	5950 5150 5950 4850
-Wire Wire Line
-	6250 4750 6850 4750
-Wire Wire Line
-	6250 5700 6850 5700
-Wire Wire Line
 	6850 4750 6850 5700
 Connection ~ 6850 4750
 Wire Wire Line
 	6850 4750 7700 4750
-Wire Wire Line
-	5950 5150 5950 5600
-$Comp
-L power:V+ #PWR?
-U 1 1 5F92C7BA
-P 5950 4450
-F 0 "#PWR?" H 5950 4300 50  0001 C CNN
-F 1 "V+" H 5965 4623 50  0000 C CNN
-F 2 "" H 5950 4450 50  0001 C CNN
-F 3 "" H 5950 4450 50  0001 C CNN
-	1    5950 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:V+ #PWR?
-U 1 1 5F92E15E
-P 5950 6000
-F 0 "#PWR?" H 5950 5850 50  0001 C CNN
-F 1 "V+" H 5965 6173 50  0000 C CNN
-F 2 "" H 5950 6000 50  0001 C CNN
-F 3 "" H 5950 6000 50  0001 C CNN
-	1    5950 6000
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 5F913ACC
@@ -194,8 +124,6 @@ F 12 "Active" H 5350 5850 60  0001 L CNN "Status"
 	1    5150 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5350 4650 5650 4650
 $Comp
 L dk_Diodes-Rectifiers-Single:1N4148 D?
 U 1 1 5F91ADBE
@@ -217,30 +145,24 @@ F 12 "Active" H 5450 7000 60  0001 L CNN "Status"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 5800 5650 5800
-Wire Wire Line
 	5050 5800 4750 5800
 Wire Wire Line
 	4750 5800 4750 4650
 Wire Wire Line
 	4750 4650 5050 4650
 Wire Wire Line
-	4750 4650 4750 3900
+	4750 4650 4750 3850
 Wire Wire Line
-	4750 3900 6500 3900
+	4750 3850 6600 3850
 Wire Wire Line
-	6500 3900 6500 4550
-Wire Wire Line
-	6500 4550 6250 4550
+	6600 3850 6600 4550
 Connection ~ 4750 4650
 Wire Wire Line
 	4750 5800 4750 6650
 Wire Wire Line
-	4750 6650 6500 6650
+	4750 6650 6600 6650
 Wire Wire Line
-	6500 6650 6500 5900
-Wire Wire Line
-	6500 5900 6250 5900
+	6600 6650 6600 5900
 Connection ~ 4750 5800
 $Comp
 L power:V- #PWR?
@@ -251,26 +173,6 @@ F 1 "V-" H 4115 4923 50  0000 C CNN
 F 2 "" H 4100 4750 50  0001 C CNN
 F 3 "" H 4100 4750 50  0001 C CNN
 	1    4100 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps:TL082IP U?
-U 1 1 5F94A49B
-P 2650 4300
-F 0 "U?" H 2950 4600 60  0000 C CNN
-F 1 "TL082IP" H 2950 4500 60  0000 C CNN
-F 2 "digikey-footprints:DIP-8_W7.62mm" H 2850 4500 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 2850 4600 60  0001 L CNN
-F 4 "296-1781-5-ND" H 2850 4700 60  0001 L CNN "Digi-Key_PN"
-F 5 "TL082IP" H 2850 4800 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 2850 4900 60  0001 L CNN "Category"
-F 7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" H 2850 5000 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 2850 5100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/TL082IP/296-1781-5-ND/277426" H 2850 5200 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC OPAMP JFET 2 CIRCUIT 8DIP" H 2850 5300 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 2850 5400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2850 5500 60  0001 L CNN "Status"
-	1    2650 4300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -294,59 +196,31 @@ F 12 "Active" H 1750 4200 60  0001 L CNN "Status"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:V+ #PWR?
-U 1 1 5F94D22D
-P 2650 4500
-F 0 "#PWR?" H 2650 4350 50  0001 C CNN
-F 1 "V+" H 2665 4673 50  0000 C CNN
-F 2 "" H 2650 4500 50  0001 C CNN
-F 3 "" H 2650 4500 50  0001 C CNN
-	1    2650 4500
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:V- #PWR?
-U 1 1 5F94DE6B
-P 2650 4100
-F 0 "#PWR?" H 2650 3975 50  0001 C CNN
-F 1 "V-" H 2665 4273 50  0000 C CNN
-F 2 "" H 2650 4100 50  0001 C CNN
-F 3 "" H 2650 4100 50  0001 C CNN
-	1    2650 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:V- #PWR?
 U 1 1 5F94E6B4
-P 1550 2800
-F 0 "#PWR?" H 1550 2675 50  0001 C CNN
-F 1 "V-" H 1565 2973 50  0000 C CNN
-F 2 "" H 1550 2800 50  0001 C CNN
-F 3 "" H 1550 2800 50  0001 C CNN
-	1    1550 2800
+P 1550 2600
+F 0 "#PWR?" H 1550 2475 50  0001 C CNN
+F 1 "V-" H 1565 2773 50  0000 C CNN
+F 2 "" H 1550 2600 50  0001 C CNN
+F 3 "" H 1550 2600 50  0001 C CNN
+	1    1550 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:V+ #PWR?
 U 1 1 5F94EEFD
-P 1550 3200
-F 0 "#PWR?" H 1550 3050 50  0001 C CNN
-F 1 "V+" H 1565 3373 50  0000 C CNN
-F 2 "" H 1550 3200 50  0001 C CNN
-F 3 "" H 1550 3200 50  0001 C CNN
-	1    1550 3200
+P 1550 3350
+F 0 "#PWR?" H 1550 3200 50  0001 C CNN
+F 1 "V+" H 1650 3400 50  0000 C CNN
+F 2 "" H 1550 3350 50  0001 C CNN
+F 3 "" H 1550 3350 50  0001 C CNN
+	1    1550 3350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2950 4400 3150 4400
-Wire Wire Line
 	3150 4400 3150 4800
 Wire Wire Line
-	3150 4800 2000 4800
-Wire Wire Line
 	2000 4800 2000 4300
-Wire Wire Line
-	2000 4300 2350 4300
 $Comp
 L Device:R R?
 U 1 1 5F95B93C
@@ -519,8 +393,6 @@ F 3 "~" H 9600 4900 50  0001 C CNN
 	1    9600 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 4550 9600 4650
 $Comp
 L power:GND #PWR?
 U 1 1 5F9A58F6
@@ -547,11 +419,6 @@ F 3 "" H 9600 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9600 4050 9600 4250
-Wire Wire Line
-	9600 4650 8300 4650
-Connection ~ 9600 4650
-Wire Wire Line
-	9600 4650 9600 4750
 $Comp
 L Device:R_POT RV?
 U 1 1 5F9B8C80
@@ -564,12 +431,9 @@ F 3 "~" H 4100 4200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 4200 2950 4200
+	4100 4050 4100 3850
 Wire Wire Line
-	4100 4050 4100 3900
-Wire Wire Line
-	4100 3900 4750 3900
-Connection ~ 4750 3900
+	4100 3850 4750 3850
 Wire Wire Line
 	4100 4750 4100 4350
 $Comp
@@ -612,4 +476,400 @@ Wire Wire Line
 Wire Wire Line
 	9800 2300 5300 2300
 Connection ~ 5300 2300
+$Comp
+L Device:C C?
+U 1 1 5FA268F8
+P 8300 5350
+F 0 "C?" H 8415 5396 50  0000 L CNN
+F 1 "0.1u" H 8415 5305 50  0000 L CNN
+F 2 "" H 8338 5200 50  0001 C CNN
+F 3 "~" H 8300 5350 50  0001 C CNN
+	1    8300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA2E6AC
+P 8300 5500
+F 0 "#PWR?" H 8300 5250 50  0001 C CNN
+F 1 "GND" H 8305 5327 50  0000 C CNN
+F 2 "" H 8300 5500 50  0001 C CNN
+F 3 "" H 8300 5500 50  0001 C CNN
+	1    8300 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 5200 8000 5200
+Connection ~ 8000 5200
+Wire Wire Line
+	8000 5200 8000 4950
+Connection ~ 8000 4050
+Wire Wire Line
+	8000 4050 8000 4550
+Connection ~ 9600 4650
+Wire Wire Line
+	9600 4650 9600 4750
+Wire Wire Line
+	9600 4550 9600 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5FA383CA
+P 8350 4350
+F 0 "#PWR?" H 8350 4100 50  0001 C CNN
+F 1 "GND" H 8355 4177 50  0000 C CNN
+F 2 "" H 8350 4350 50  0001 C CNN
+F 3 "" H 8350 4350 50  0001 C CNN
+	1    8350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA383C4
+P 8350 4200
+F 0 "C?" H 8465 4246 50  0000 L CNN
+F 1 "0.1u" H 8465 4155 50  0000 L CNN
+F 2 "" H 8388 4050 50  0001 C CNN
+F 3 "~" H 8350 4200 50  0001 C CNN
+	1    8350 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4650 8300 4650
+Wire Wire Line
+	8000 4050 8350 4050
+Wire Wire Line
+	5350 5800 5650 5800
+Wire Wire Line
+	6600 5900 6250 5900
+Wire Wire Line
+	6250 5700 6850 5700
+Wire Wire Line
+	5950 5150 5950 5600
+$Comp
+L power:V+ #PWR?
+U 1 1 5F92E15E
+P 5950 6200
+F 0 "#PWR?" H 5950 6050 50  0001 C CNN
+F 1 "V+" H 5965 6373 50  0000 C CNN
+F 2 "" H 5950 6200 50  0001 C CNN
+F 3 "" H 5950 6200 50  0001 C CNN
+	1    5950 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps:TL082IP U?
+U 2 1 5F913925
+P 5950 5800
+F 0 "U?" H 6250 5500 60  0000 C CNN
+F 1 "TL082IP" H 6250 5600 60  0000 C CNN
+F 2 "digikey-footprints:DIP-8_W7.62mm" H 6150 6000 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 6150 6100 60  0001 L CNN
+F 4 "296-1781-5-ND" H 6150 6200 60  0001 L CNN "Digi-Key_PN"
+F 5 "TL082IP" H 6150 6300 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6150 6400 60  0001 L CNN "Category"
+F 7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" H 6150 6500 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 6150 6600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/TL082IP/296-1781-5-ND/277426" H 6150 6700 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC OPAMP JFET 2 CIRCUIT 8DIP" H 6150 6800 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 6150 6900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 7000 60  0001 L CNN "Status"
+	2    5950 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA5461A
+P 6200 6400
+F 0 "#PWR?" H 6200 6150 50  0001 C CNN
+F 1 "GND" H 6205 6227 50  0000 C CNN
+F 2 "" H 6200 6400 50  0001 C CNN
+F 3 "" H 6200 6400 50  0001 C CNN
+	1    6200 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA54614
+P 6200 6250
+F 0 "C?" H 6315 6296 50  0000 L CNN
+F 1 "0.1u" H 6315 6205 50  0000 L CNN
+F 2 "" H 6238 6100 50  0001 C CNN
+F 3 "~" H 6200 6250 50  0001 C CNN
+	1    6200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 6100 5950 6100
+Wire Wire Line
+	5950 6200 5950 6100
+Connection ~ 5950 6100
+Wire Wire Line
+	5950 6000 5950 6100
+$Comp
+L Device:C C?
+U 1 1 5FA64359
+P 6500 5300
+F 0 "C?" H 6615 5346 50  0000 L CNN
+F 1 "0.1u" H 6615 5255 50  0000 L CNN
+F 2 "" H 6538 5150 50  0001 C CNN
+F 3 "~" H 6500 5300 50  0001 C CNN
+	1    6500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA6435F
+P 6500 5450
+F 0 "#PWR?" H 6500 5200 50  0001 C CNN
+F 1 "GND" H 6505 5277 50  0000 C CNN
+F 2 "" H 6500 5450 50  0001 C CNN
+F 3 "" H 6500 5450 50  0001 C CNN
+	1    6500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5150 6200 5150
+$Comp
+L Device:C C?
+U 1 1 5FA678DE
+P 6300 4150
+F 0 "C?" H 6415 4196 50  0000 L CNN
+F 1 "0.1u" H 6415 4105 50  0000 L CNN
+F 2 "" H 6338 4000 50  0001 C CNN
+F 3 "~" H 6300 4150 50  0001 C CNN
+	1    6300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA678E4
+P 6300 4300
+F 0 "#PWR?" H 6300 4050 50  0001 C CNN
+F 1 "GND" H 6305 4127 50  0000 C CNN
+F 2 "" H 6300 4300 50  0001 C CNN
+F 3 "" H 6300 4300 50  0001 C CNN
+	1    6300 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 3850
+Wire Wire Line
+	5950 5150 5950 4850
+Wire Wire Line
+	6250 4750 6850 4750
+Wire Wire Line
+	6600 4550 6250 4550
+Wire Wire Line
+	5350 4650 5650 4650
+$Comp
+L dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps:TL082IP U?
+U 1 1 5F91281B
+P 5950 4650
+F 0 "U?" H 6250 4950 60  0000 C CNN
+F 1 "TL082IP" H 6250 4850 60  0000 C CNN
+F 2 "digikey-footprints:DIP-8_W7.62mm" H 6150 4850 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 6150 4950 60  0001 L CNN
+F 4 "296-1781-5-ND" H 6150 5050 60  0001 L CNN "Digi-Key_PN"
+F 5 "TL082IP" H 6150 5150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6150 5250 60  0001 L CNN "Category"
+F 7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" H 6150 5350 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 6150 5450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/TL082IP/296-1781-5-ND/277426" H 6150 5550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC OPAMP JFET 2 CIRCUIT 8DIP" H 6150 5650 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 6150 5750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 5850 60  0001 L CNN "Status"
+	1    5950 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:V+ #PWR?
+U 1 1 5F92C7BA
+P 5850 4000
+F 0 "#PWR?" H 5850 3850 50  0001 C CNN
+F 1 "V+" H 5865 4173 50  0000 C CNN
+F 2 "" H 5850 4000 50  0001 C CNN
+F 3 "" H 5850 4000 50  0001 C CNN
+	1    5850 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 4000 5950 4000
+Connection ~ 5950 4000
+Wire Wire Line
+	5950 4000 5950 4450
+Wire Wire Line
+	5950 4000 6300 4000
+$Comp
+L Device:C C?
+U 1 1 5FAA0DD7
+P 3050 4000
+F 0 "C?" V 2798 4000 50  0000 C CNN
+F 1 "0.1u" V 2889 4000 50  0000 C CNN
+F 2 "" H 3088 3850 50  0001 C CNN
+F 3 "~" H 3050 4000 50  0001 C CNN
+	1    3050 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAA0DDD
+P 3350 4000
+F 0 "#PWR?" H 3350 3750 50  0001 C CNN
+F 1 "GND" H 3355 3827 50  0000 C CNN
+F 2 "" H 3350 4000 50  0001 C CNN
+F 3 "" H 3350 4000 50  0001 C CNN
+	1    3350 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:V- #PWR?
+U 1 1 5F94DE6B
+P 2650 3900
+F 0 "#PWR?" H 2650 3775 50  0001 C CNN
+F 1 "V-" H 2665 4073 50  0000 C CNN
+F 2 "" H 2650 3900 50  0001 C CNN
+F 3 "" H 2650 3900 50  0001 C CNN
+	1    2650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4000 3200 4000
+Wire Wire Line
+	2650 3900 2650 4000
+Wire Wire Line
+	2900 4000 2650 4000
+Connection ~ 2650 4000
+$Comp
+L Device:C C?
+U 1 1 5FAC6950
+P 2900 4950
+F 0 "C?" V 3050 4950 50  0000 C CNN
+F 1 "0.1u" V 3150 4950 50  0000 C CNN
+F 2 "" H 2938 4800 50  0001 C CNN
+F 3 "~" H 2900 4950 50  0001 C CNN
+	1    2900 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAC6956
+P 3200 4950
+F 0 "#PWR?" H 3200 4700 50  0001 C CNN
+F 1 "GND" H 3205 4777 50  0000 C CNN
+F 2 "" H 3200 4950 50  0001 C CNN
+F 3 "" H 3200 4950 50  0001 C CNN
+	1    3200 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 4950 3050 4950
+Wire Wire Line
+	3150 4800 2000 4800
+Wire Wire Line
+	2650 4000 2650 4100
+Wire Wire Line
+	3950 4200 2950 4200
+Wire Wire Line
+	2950 4400 3150 4400
+Wire Wire Line
+	2000 4300 2350 4300
+$Comp
+L dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps:TL082IP U?
+U 1 1 5F94A49B
+P 2650 4300
+F 0 "U?" H 2950 4600 60  0000 C CNN
+F 1 "TL082IP" H 2950 4500 60  0000 C CNN
+F 2 "digikey-footprints:DIP-8_W7.62mm" H 2850 4500 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 2850 4600 60  0001 L CNN
+F 4 "296-1781-5-ND" H 2850 4700 60  0001 L CNN "Digi-Key_PN"
+F 5 "TL082IP" H 2850 4800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 2850 4900 60  0001 L CNN "Category"
+F 7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" H 2850 5000 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftl081a" H 2850 5100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/TL082IP/296-1781-5-ND/277426" H 2850 5200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC OPAMP JFET 2 CIRCUIT 8DIP" H 2850 5300 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 2850 5400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2850 5500 60  0001 L CNN "Status"
+	1    2650 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:V+ #PWR?
+U 1 1 5F94D22D
+P 2650 5100
+F 0 "#PWR?" H 2650 4950 50  0001 C CNN
+F 1 "V+" H 2665 5273 50  0000 C CNN
+F 2 "" H 2650 5100 50  0001 C CNN
+F 3 "" H 2650 5100 50  0001 C CNN
+	1    2650 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 4950 2650 4950
+Wire Wire Line
+	2650 4950 2650 5100
+Wire Wire Line
+	2650 4500 2650 4950
+Connection ~ 2650 4950
+$Comp
+L Device:C C?
+U 1 1 5FADDE83
+P 2200 2750
+F 0 "C?" V 1948 2750 50  0000 C CNN
+F 1 "0.1u" V 2039 2750 50  0000 C CNN
+F 2 "" H 2238 2600 50  0001 C CNN
+F 3 "~" H 2200 2750 50  0001 C CNN
+	1    2200 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FADDE89
+P 2500 2750
+F 0 "#PWR?" H 2500 2500 50  0001 C CNN
+F 1 "GND" H 2505 2577 50  0000 C CNN
+F 2 "" H 2500 2750 50  0001 C CNN
+F 3 "" H 2500 2750 50  0001 C CNN
+	1    2500 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 2750 2350 2750
+$Comp
+L Device:C C?
+U 1 1 5FAE0791
+P 2200 3300
+F 0 "C?" V 1948 3300 50  0000 C CNN
+F 1 "0.1u" V 2039 3300 50  0000 C CNN
+F 2 "" H 2238 3150 50  0001 C CNN
+F 3 "~" H 2200 3300 50  0001 C CNN
+	1    2200 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAE0797
+P 2500 3300
+F 0 "#PWR?" H 2500 3050 50  0001 C CNN
+F 1 "GND" H 2505 3127 50  0000 C CNN
+F 2 "" H 2500 3300 50  0001 C CNN
+F 3 "" H 2500 3300 50  0001 C CNN
+	1    2500 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 3300 2350 3300
+Wire Wire Line
+	2050 2750 1550 2750
+Wire Wire Line
+	1550 2750 1550 2600
+Wire Wire Line
+	1550 2800 1550 2750
+Connection ~ 1550 2750
+Wire Wire Line
+	2050 3300 1550 3300
+Wire Wire Line
+	1550 3300 1550 3200
+Wire Wire Line
+	1550 3350 1550 3300
+Connection ~ 1550 3300
 $EndSCHEMATC
