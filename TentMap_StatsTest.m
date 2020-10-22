@@ -1,6 +1,9 @@
 % Chaotic crew
 clear; close all;
-x = importdata("tentMapCircuit_jdk_summing10s.txt_converted_data.csv");
+data_file_name = uigetfile("*.csv");
+%% 
+
+x = importdata(data_file_name);
 
 L = 1e5;
 m = 1.99999; %slope of tent map
@@ -52,6 +55,7 @@ s = (x>=partition);
 [cc,lags] = xcorr(s-mean(s), s-mean(s), 'coeff');
 figure;
 plot(lags, abs(cc));
+title('autocorrelation')
 
 %{
 k = 1;
