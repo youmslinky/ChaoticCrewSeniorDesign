@@ -165,17 +165,6 @@ Wire Wire Line
 	6600 6650 6600 5900
 Connection ~ 4750 5800
 $Comp
-L power:V- #PWR?
-U 1 1 5F92617D
-P 4100 4750
-F 0 "#PWR?" H 4100 4625 50  0001 C CNN
-F 1 "V-" H 4115 4923 50  0000 C CNN
-F 2 "" H 4100 4750 50  0001 C CNN
-F 3 "" H 4100 4750 50  0001 C CNN
-	1    4100 4750
-	-1   0    0    1   
-$EndComp
-$Comp
 L dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps:TL082IP U?
 U 2 1 5F94BB1A
 P 1550 3000
@@ -789,4 +778,15 @@ Wire Wire Line
 	1550 2600 1550 2800
 Wire Wire Line
 	1550 3200 1550 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5FB1CFAF
+P 4100 4750
+F 0 "#PWR?" H 4100 4500 50  0001 C CNN
+F 1 "GND" H 4105 4577 50  0000 C CNN
+F 2 "" H 4100 4750 50  0001 C CNN
+F 3 "" H 4100 4750 50  0001 C CNN
+	1    4100 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
