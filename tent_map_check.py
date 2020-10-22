@@ -9,6 +9,7 @@ from os.path import basename
 this script takes a ltspice output text file as a command line argument.
 it plots the data as a tent map, and calculates the slope of both sides given
 user input
+it needs the columns time, V(vc), V(vclk) in that order
 """
 
 
