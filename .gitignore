@@ -1,3 +1,12 @@
+#ignore ltspice raw files (very big)
+*.raw
+
+#ignore csv files
+*.csv
+
+#ignore text files from ltspice
+LTspice_circuits/**/*.txt
+
 # Ignore list for KiCAD Projects
 
 # Temporary files
