@@ -49,11 +49,8 @@ for row in arr:
     t = row[0]
     vc = row[1]
     vclock = row[2]
-    if (
-        last_vclock > trigger_voltage
-        and vclock <= trigger_voltage
-        or last_vclock <= trigger_voltage
-        and vclock > trigger_voltage
+    if (last_vclock > trigger_voltage and vclock <= trigger_voltage) or (
+        last_vclock <= trigger_voltage and vclock > trigger_voltage
     ):
         x.append(vc)
         tSamp.append(t)
