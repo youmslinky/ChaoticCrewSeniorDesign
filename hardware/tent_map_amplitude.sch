@@ -797,45 +797,45 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5F959324
-P 6650 2600
-F 0 "TP3" H 6708 2718 50  0000 L CNN
-F 1 "GND" H 6708 2627 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6850 2600 50  0001 C CNN
-F 3 "~" H 6850 2600 50  0001 C CNN
-	1    6650 2600
+P 6800 3100
+F 0 "TP3" H 6858 3218 50  0000 L CNN
+F 1 "GND" H 6858 3127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7000 3100 50  0001 C CNN
+F 3 "~" H 7000 3100 50  0001 C CNN
+	1    6800 3100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5F959FF3
-P 6350 2900
-F 0 "#PWR0101" H 6350 2650 50  0001 C CNN
-F 1 "GND" H 6355 2727 50  0000 C CNN
-F 2 "" H 6350 2900 50  0001 C CNN
-F 3 "" H 6350 2900 50  0001 C CNN
-	1    6350 2900
+P 6500 3400
+F 0 "#PWR0101" H 6500 3150 50  0001 C CNN
+F 1 "GND" H 6505 3227 50  0000 C CNN
+F 2 "" H 6500 3400 50  0001 C CNN
+F 3 "" H 6500 3400 50  0001 C CNN
+	1    6500 3400
 	0    1    1    0   
 $EndComp
 $Comp
 L power:V+ #PWR0102
 U 1 1 5F95FCA8
-P 7300 2150
-F 0 "#PWR0102" H 7300 2000 50  0001 C CNN
-F 1 "V+" H 7315 2323 50  0000 C CNN
-F 2 "" H 7300 2150 50  0001 C CNN
-F 3 "" H 7300 2150 50  0001 C CNN
-	1    7300 2150
+P 7450 2650
+F 0 "#PWR0102" H 7450 2500 50  0001 C CNN
+F 1 "V+" H 7465 2823 50  0000 C CNN
+F 2 "" H 7450 2650 50  0001 C CNN
+F 3 "" H 7450 2650 50  0001 C CNN
+	1    7450 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5F9619A5
-P 7750 2300
-F 0 "TP4" H 7550 2500 50  0000 L CNN
-F 1 "V+" H 7600 2400 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7950 2300 50  0001 C CNN
-F 3 "~" H 7950 2300 50  0001 C CNN
-	1    7750 2300
+P 7900 2800
+F 0 "TP4" H 7700 3000 50  0000 L CNN
+F 1 "V+" H 7750 2900 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 8100 2800 50  0001 C CNN
+F 3 "~" H 8100 2800 50  0001 C CNN
+	1    7900 2800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -857,82 +857,82 @@ Wire Wire Line
 $Comp
 L Device:CP1 C8
 U 1 1 5F9BF412
-P 7300 2600
-F 0 "C8" H 7415 2646 50  0000 L CNN
-F 1 "10u" H 7415 2555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7300 2600 50  0001 C CNN
-F 3 "~" H 7300 2600 50  0001 C CNN
-	1    7300 2600
+P 7450 3100
+F 0 "C8" H 7565 3146 50  0000 L CNN
+F 1 "10u" H 7565 3055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7450 3100 50  0001 C CNN
+F 3 "~" H 7450 3100 50  0001 C CNN
+	1    7450 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 2900 6650 2600
+	6800 3400 6800 3100
 Wire Wire Line
-	6350 2900 6650 2900
+	6500 3400 6800 3400
 Wire Wire Line
-	7300 2900 7300 2750
+	7450 3400 7450 3250
 Wire Wire Line
-	6650 2900 7300 2900
-Connection ~ 6650 2900
-Connection ~ 7300 2900
+	6800 3400 7450 3400
+Connection ~ 6800 3400
+Connection ~ 7450 3400
 $Comp
 L power:V- #PWR0103
 U 1 1 5F960873
-P 7300 3650
-F 0 "#PWR0103" H 7300 3525 50  0001 C CNN
-F 1 "V-" H 7315 3823 50  0000 C CNN
-F 2 "" H 7300 3650 50  0001 C CNN
-F 3 "" H 7300 3650 50  0001 C CNN
-	1    7300 3650
+P 7450 4150
+F 0 "#PWR0103" H 7450 4025 50  0001 C CNN
+F 1 "V-" H 7465 4323 50  0000 C CNN
+F 2 "" H 7450 4150 50  0001 C CNN
+F 3 "" H 7450 4150 50  0001 C CNN
+	1    7450 4150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7300 2150 7300 2300
+	7450 2650 7450 2800
 Wire Wire Line
-	7750 2300 7300 2300
-Connection ~ 7300 2300
+	7900 2800 7450 2800
+Connection ~ 7450 2800
 Wire Wire Line
-	7300 2300 7300 2450
+	7450 2800 7450 2950
 Wire Wire Line
-	7300 2900 7300 3000
+	7450 3400 7450 3500
 Wire Wire Line
-	7300 3300 7300 3500
+	7450 3800 7450 4000
 $Comp
 L Device:CP1 C9
 U 1 1 5F99C4D0
-P 7300 3150
-F 0 "C9" H 7415 3196 50  0000 L CNN
-F 1 "10u" H 7415 3105 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7300 3150 50  0001 C CNN
-F 3 "~" H 7300 3150 50  0001 C CNN
-	1    7300 3150
+P 7450 3650
+F 0 "C9" H 7565 3696 50  0000 L CNN
+F 1 "10u" H 7565 3605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7450 3650 50  0001 C CNN
+F 3 "~" H 7450 3650 50  0001 C CNN
+	1    7450 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5F964DF0
-P 7750 3500
-F 0 "TP5" V 7704 3688 50  0000 L CNN
-F 1 "V-" V 7795 3688 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7950 3500 50  0001 C CNN
-F 3 "~" H 7950 3500 50  0001 C CNN
-	1    7750 3500
+P 7900 4000
+F 0 "TP5" V 7854 4188 50  0000 L CNN
+F 1 "V-" V 7945 4188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 8100 4000 50  0001 C CNN
+F 3 "~" H 8100 4000 50  0001 C CNN
+	1    7900 4000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7750 3500 7300 3500
-Connection ~ 7300 3500
+	7900 4000 7450 4000
+Connection ~ 7450 4000
 Wire Wire Line
-	7300 3500 7300 3650
-Text Notes 7700 2900 0    50   ~ 0
+	7450 4000 7450 4150
+Text Notes 7800 3250 0    50   ~ 0
 bypass caps for supply rails\nshould be tantalum or electrolytic
 Connection ~ 6050 5850
-Text Notes 6300 950  0    50   ~ 0
+Text Notes 9400 800  0    50   ~ 0
 sampling circuit relies on fpga/digital\n logic to give proper sampling pulses based \non main clock
-Text Notes 6300 1500 0    50   ~ 0
-need a clock double the speed of the regular clock for sampling\nfirst and third lf398's need to sample at positive going edge of the double clock\nand 2nd lf398 needs to sample at negative going edge of the double clock
-Text Notes 6300 1800 0    50   ~ 0
-sampling should use polypropolene caps as they have less hysterisis than other cap types\n
+Text Notes 9500 1600 0    50   ~ 0
+need a clock double the speed of the \nregular clock for sampling\n\nfirst and third lf398's need to sample at \npositive going edge of the double clock\n\nand 2nd lf398 needs to sample at \nnegative going edge of the double clock
+Text Notes 4150 1050 0    50   ~ 0
+sampling should use polypropolene\n caps as they have less hysterisis than\n other cap types\n
 Wire Wire Line
 	4600 5350 4600 5550
 Connection ~ 850  4700
@@ -1157,7 +1157,7 @@ F 3 "" H 900 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2300 1400 4750 1400
+	2300 1450 4750 1450
 Wire Wire Line
 	2050 3900 2050 1850
 $Comp
@@ -1172,7 +1172,7 @@ F 3 "~" H 3700 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2300 1250 2300 1400
+	2300 1250 2300 1450
 $Comp
 L Connector:TestPoint TP10
 U 1 1 5F9428B0
@@ -1449,8 +1449,8 @@ Wire Wire Line
 Wire Wire Line
 	4600 1850 4900 1850
 Wire Wire Line
-	2300 1950 2300 1400
-Connection ~ 2300 1400
+	2300 1950 2300 1450
+Connection ~ 2300 1450
 Wire Wire Line
 	3500 1950 3500 1250
 $Comp
@@ -1469,7 +1469,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 1950 4750 1950
 Wire Wire Line
-	4750 1950 4750 1400
+	4750 1950 4750 1450
 Wire Wire Line
 	3900 3600 3900 3800
 $Comp
@@ -1613,6 +1613,77 @@ Wire Wire Line
 Wire Wire Line
 	5550 2700 5300 2700
 $Comp
+L power:V- #PWR0129
+U 1 1 5FA37D15
+P 10150 4500
+F 0 "#PWR0129" H 10150 4375 50  0001 C CNN
+F 1 "V-" H 10165 4673 50  0000 C CNN
+F 2 "" H 10150 4500 50  0001 C CNN
+F 3 "" H 10150 4500 50  0001 C CNN
+	1    10150 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10150 4500 10150 4300
+Text Notes 2900 3100 0    50   ~ 0
+CE caps are extra footprints for mounting 0805 caps if needed
+$Comp
+L power:V+ #PWR0133
+U 1 1 5FA8F4D7
+P 9600 4200
+F 0 "#PWR0133" H 9600 4050 50  0001 C CNN
+F 1 "V+" H 9615 4373 50  0000 C CNN
+F 2 "" H 9600 4200 50  0001 C CNN
+F 3 "" H 9600 4200 50  0001 C CNN
+	1    9600 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5FA9A0BB
+P 9600 4000
+F 0 "#PWR0134" H 9600 3750 50  0001 C CNN
+F 1 "GND" H 9605 3827 50  0000 C CNN
+F 2 "" H 9600 4000 50  0001 C CNN
+F 3 "" H 9600 4000 50  0001 C CNN
+	1    9600 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9600 4200 9850 4200
+Wire Wire Line
+	9600 4000 9850 4000
+Wire Wire Line
+	10450 4100 10600 4100
+Wire Wire Line
+	7650 800  7650 1050
+$Comp
+L power:V+ #PWR0131
+U 1 1 5FA48E01
+P 7650 800
+F 0 "#PWR0131" H 7650 650 50  0001 C CNN
+F 1 "V+" H 7665 973 50  0000 C CNN
+F 2 "" H 7650 800 50  0001 C CNN
+F 3 "" H 7650 800 50  0001 C CNN
+	1    7650 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:V+ #PWR0130
+U 1 1 5FA3FF9C
+P 10150 3750
+F 0 "#PWR0130" H 10150 3600 50  0001 C CNN
+F 1 "V+" H 10165 3923 50  0000 C CNN
+F 2 "" H 10150 3750 50  0001 C CNN
+F 3 "" H 10150 3750 50  0001 C CNN
+	1    10150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3750 10150 3900
+Text Notes 9050 3650 0    50   ~ 0
+U1C is unused
+$Comp
 L dk_Linear-Comparators:LM339AN U1
 U 3 1 5FA26216
 P 10150 4100
@@ -1633,135 +1704,137 @@ F 12 "Active" H 10350 5300 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Linear-Comparators:LM339AN U1
-U 4 1 5FA2761C
-P 10550 3250
-F 0 "U1" H 10700 3000 60  0000 L CNN
-F 1 "LM339AN" H 10650 2900 60  0000 L CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 10750 3450 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm139a" H 10750 3550 60  0001 L CNN
-F 4 "296-6605-5-ND" H 10750 3650 60  0001 L CNN "Digi-Key_PN"
-F 5 "LM339AN" H 10750 3750 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 10750 3850 60  0001 L CNN "Category"
-F 7 "Linear - Comparators" H 10750 3950 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm139a" H 10750 4050 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/LM339AN/296-6605-5-ND/372806" H 10750 4150 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC QUAD DIFF COMPARATOR 14-DIP" H 10750 4250 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 10750 4350 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 10750 4450 60  0001 L CNN "Status"
-	4    10550 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:V- #PWR0129
-U 1 1 5FA37D15
-P 10150 4500
-F 0 "#PWR0129" H 10150 4375 50  0001 C CNN
-F 1 "V-" H 10165 4673 50  0000 C CNN
-F 2 "" H 10150 4500 50  0001 C CNN
-F 3 "" H 10150 4500 50  0001 C CNN
-	1    10150 4500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10150 4500 10150 4300
-$Comp
-L power:V+ #PWR0130
-U 1 1 5FA3FF9C
-P 10150 3750
-F 0 "#PWR0130" H 10150 3600 50  0001 C CNN
-F 1 "V+" H 10165 3923 50  0000 C CNN
-F 2 "" H 10150 3750 50  0001 C CNN
-F 3 "" H 10150 3750 50  0001 C CNN
-	1    10150 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 3750 10150 3900
-$Comp
-L power:V+ #PWR0131
-U 1 1 5FA48E01
-P 10550 2800
-F 0 "#PWR0131" H 10550 2650 50  0001 C CNN
-F 1 "V+" H 10565 2973 50  0000 C CNN
-F 2 "" H 10550 2800 50  0001 C CNN
-F 3 "" H 10550 2800 50  0001 C CNN
-	1    10550 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10550 2800 10550 3050
-$Comp
 L power:V- #PWR0132
 U 1 1 5FA51133
-P 10550 3600
-F 0 "#PWR0132" H 10550 3475 50  0001 C CNN
-F 1 "V-" H 10565 3773 50  0000 C CNN
-F 2 "" H 10550 3600 50  0001 C CNN
-F 3 "" H 10550 3600 50  0001 C CNN
-	1    10550 3600
+P 7650 1600
+F 0 "#PWR0132" H 7650 1475 50  0001 C CNN
+F 1 "V-" H 7665 1773 50  0000 C CNN
+F 2 "" H 7650 1600 50  0001 C CNN
+F 3 "" H 7650 1600 50  0001 C CNN
+	1    7650 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Linear-Comparators:LM339AN U1
+U 4 1 5FA2761C
+P 7650 1250
+F 0 "U1" H 7800 1000 60  0000 L CNN
+F 1 "LM339AN" H 7750 900 60  0000 L CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 7850 1450 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm139a" H 7850 1550 60  0001 L CNN
+F 4 "296-6605-5-ND" H 7850 1650 60  0001 L CNN "Digi-Key_PN"
+F 5 "LM339AN" H 7850 1750 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 7850 1850 60  0001 L CNN "Category"
+F 7 "Linear - Comparators" H 7850 1950 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm139a" H 7850 2050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/LM339AN/296-6605-5-ND/372806" H 7850 2150 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC QUAD DIFF COMPARATOR 14-DIP" H 7850 2250 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 7850 2350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7850 2450 60  0001 L CNN "Status"
+	4    7650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1600 7650 1450
+$Comp
+L power:V- #PWR0135
+U 1 1 5FA12233
+P 6650 1450
+F 0 "#PWR0135" H 6650 1325 50  0001 C CNN
+F 1 "V-" H 6665 1623 50  0000 C CNN
+F 2 "" H 6650 1450 50  0001 C CNN
+F 3 "" H 6650 1450 50  0001 C CNN
+	1    6650 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5FA425E6
+P 6650 900
+F 0 "#PWR0136" H 6650 650 50  0001 C CNN
+F 1 "GND" H 6655 727 50  0000 C CNN
+F 2 "" H 6650 900 50  0001 C CNN
+F 3 "" H 6650 900 50  0001 C CNN
+	1    6650 900 
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10550 3600 10550 3450
-Text Notes 2900 3100 0    50   ~ 0
-CE caps are extra footprints for mounting 0805 caps if needed
+	6650 900  6650 1000
+Wire Wire Line
+	6650 1450 6650 1300
 $Comp
-L power:V+ #PWR?
-U 1 1 5FA8F4D7
-P 9600 4200
-F 0 "#PWR?" H 9600 4050 50  0001 C CNN
-F 1 "V+" H 9615 4373 50  0000 C CNN
-F 2 "" H 9600 4200 50  0001 C CNN
-F 3 "" H 9600 4200 50  0001 C CNN
-	1    9600 4200
+L Device:R_POT RV3
+U 1 1 5FA11A2B
+P 6650 1150
+F 0 "RV3" H 6580 1196 50  0000 R CNN
+F 1 "R_POT" H 6580 1105 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 6650 1150 50  0001 C CNN
+F 3 "~" H 6650 1150 50  0001 C CNN
+	1    6650 1150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6800 1150 7350 1150
+Wire Wire Line
+	7350 1350 3300 1350
+Wire Wire Line
+	3300 1350 3300 1850
+Connection ~ 3300 1850
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5FAADDC1
+P 8850 1250
+F 0 "TP16" V 8804 1438 50  0000 L CNN
+F 1 "Vbits" V 8895 1438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 9050 1250 50  0001 C CNN
+F 3 "~" H 9050 1250 50  0001 C CNN
+	1    8850 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5FAC007E
+P 8700 750
+F 0 "#PWR0137" H 8700 600 50  0001 C CNN
+F 1 "+3.3V" H 8715 923 50  0000 C CNN
+F 2 "" H 8700 750 50  0001 C CNN
+F 3 "" H 8700 750 50  0001 C CNN
+	1    8700 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FAC0BF6
+P 8350 1250
+F 0 "R5" V 8557 1250 50  0000 C CNN
+F 1 "10k" V 8466 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8280 1250 50  0001 C CNN
+F 3 "~" H 8350 1250 50  0001 C CNN
+	1    8350 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5FA9A0BB
-P 9600 4000
-F 0 "#PWR?" H 9600 3750 50  0001 C CNN
-F 1 "GND" H 9605 3827 50  0000 C CNN
-F 2 "" H 9600 4000 50  0001 C CNN
-F 3 "" H 9600 4000 50  0001 C CNN
-	1    9600 4000
-	0    1    1    0   
+L Device:R R9
+U 1 1 5FAC1BCC
+P 8700 1000
+F 0 "R9" H 8770 1046 50  0000 L CNN
+F 1 "10k" H 8770 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8630 1000 50  0001 C CNN
+F 3 "~" H 8700 1000 50  0001 C CNN
+	1    8700 1000
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 4200 9850 4200
+	8500 1250 8700 1250
 Wire Wire Line
-	9600 4000 9850 4000
-$Comp
-L power:V+ #PWR?
-U 1 1 5FAAB30A
-P 10000 3350
-F 0 "#PWR?" H 10000 3200 50  0001 C CNN
-F 1 "V+" H 10015 3523 50  0000 C CNN
-F 2 "" H 10000 3350 50  0001 C CNN
-F 3 "" H 10000 3350 50  0001 C CNN
-	1    10000 3350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FAAB310
-P 10000 3150
-F 0 "#PWR?" H 10000 2900 50  0001 C CNN
-F 1 "GND" H 10005 2977 50  0000 C CNN
-F 2 "" H 10000 3150 50  0001 C CNN
-F 3 "" H 10000 3150 50  0001 C CNN
-	1    10000 3150
-	0    1    1    0   
-$EndComp
+	8700 1250 8700 1150
 Wire Wire Line
-	10000 3350 10250 3350
+	8850 1250 8700 1250
+Connection ~ 8700 1250
 Wire Wire Line
-	10000 3150 10250 3150
+	8700 750  8700 850 
 Wire Wire Line
-	10450 4100 10600 4100
-Wire Wire Line
-	10950 3250 10850 3250
-Text Notes 9050 3650 0    50   ~ 0
-U1D and U1C are unused
+	8200 1250 7950 1250
+Text Notes 6900 2000 0    50   ~ 0
+compares sample and hold value vs a set voltage \nto partition map and provide 1 or 0
 $EndSCHEMATC
