@@ -283,27 +283,27 @@ Wire Wire Line
 $Comp
 L Device:R R3
 U 1 1 5F97C339
-P 5300 4000
-F 0 "R3" V 5507 4000 50  0000 C CNN
-F 1 "10k" V 5416 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5230 4000 50  0001 C CNN
-F 3 "~" H 5300 4000 50  0001 C CNN
-	1    5300 4000
+P 4850 4000
+F 0 "R3" V 5057 4000 50  0000 C CNN
+F 1 "10k" V 4966 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4780 4000 50  0001 C CNN
+F 3 "~" H 4850 4000 50  0001 C CNN
+	1    4850 4000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5F97CB4B
-P 4850 3650
-F 0 "R1" H 4920 3696 50  0000 L CNN
-F 1 "10k" H 4920 3605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4780 3650 50  0001 C CNN
-F 3 "~" H 4850 3650 50  0001 C CNN
-	1    4850 3650
+P 5350 3650
+F 0 "R1" H 5420 3696 50  0000 L CNN
+F 1 "6.65k" H 5420 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5280 3650 50  0001 C CNN
+F 3 "~" H 5350 3650 50  0001 C CNN
+	1    5350 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 3450 4850 3500
+	5350 3450 5350 3500
 Wire Wire Line
 	8150 5550 8650 5550
 $Comp
@@ -379,7 +379,7 @@ Wire Wire Line
 	2800 3900 3600 3900
 Connection ~ 2800 3900
 Wire Wire Line
-	4850 3800 4850 4000
+	5350 3800 5350 4000
 $Comp
 L Device:C C6
 U 1 1 5FA268F8
@@ -726,12 +726,12 @@ $EndComp
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5F93CE4E
-P 5650 4000
-F 0 "TP2" V 5604 4188 50  0000 L CNN
-F 1 "ana_out" V 5695 4188 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 5850 4000 50  0001 C CNN
-F 3 "~" H 5850 4000 50  0001 C CNN
-	1    5650 4000
+P 5850 4000
+F 0 "TP2" V 5804 4188 50  0000 L CNN
+F 1 "ana_out" V 5895 4188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6050 4000 50  0001 C CNN
+F 3 "~" H 6050 4000 50  0001 C CNN
+	1    5850 4000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -745,9 +745,6 @@ F 3 "~" H 8850 5550 50  0001 C CNN
 	1    8650 5550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4850 4000 5150 4000
-Connection ~ 4850 4000
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5F94A6D5
@@ -1469,17 +1466,6 @@ Wire Wire Line
 Wire Wire Line
 	3900 3600 3900 3800
 $Comp
-L power:+3.3V #PWR0125
-U 1 1 5F960506
-P 4850 3450
-F 0 "#PWR0125" H 4850 3300 50  0001 C CNN
-F 1 "+3.3V" H 4865 3623 50  0000 C CNN
-F 2 "" H 4850 3450 50  0001 C CNN
-F 3 "" H 4850 3450 50  0001 C CNN
-	1    4850 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:V+ #PWR0126
 U 1 1 5F9610DD
 P 3900 4350
@@ -1511,28 +1497,12 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP15
 U 1 1 5F9C9A10
-P 5350 3400
-F 0 "TP15" V 5250 3450 50  0000 C CNN
-F 1 "V+3.3" V 5150 3450 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 5550 3400 50  0001 C CNN
-F 3 "~" H 5550 3400 50  0001 C CNN
-	1    5350 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 3400 5350 3500
-Wire Wire Line
-	5350 3500 4850 3500
-Connection ~ 4850 3500
-$Comp
-L power:+3.3V #PWR0128
-U 1 1 5F966AFF
-P 9250 4750
-F 0 "#PWR0128" H 9250 4600 50  0001 C CNN
-F 1 "+3.3V" H 9265 4923 50  0000 C CNN
-F 2 "" H 9250 4750 50  0001 C CNN
-F 3 "" H 9250 4750 50  0001 C CNN
-	1    9250 4750
+P 9400 2400
+F 0 "TP15" V 9300 2450 50  0000 C CNN
+F 1 "Vext" V 9200 2450 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 9600 2400 50  0001 C CNN
+F 3 "~" H 9600 2400 50  0001 C CNN
+	1    9400 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1677,7 +1647,7 @@ F 3 "" H 10150 3750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10150 3750 10150 3900
-Text Notes 9050 3650 0    50   ~ 0
+Text Notes 9300 3750 0    50   ~ 0
 U1C is unused
 $Comp
 L dk_Linear-Comparators:LM339AN U1
@@ -1770,8 +1740,6 @@ F 3 "~" H 6650 1150 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	6800 1150 7350 1150
-Wire Wire Line
 	7350 1350 3300 1350
 Wire Wire Line
 	3300 1350 3300 1850
@@ -1788,53 +1756,131 @@ F 3 "~" H 9150 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR0137
-U 1 1 5FAC007E
-P 8350 750
-F 0 "#PWR0137" H 8350 600 50  0001 C CNN
-F 1 "+3.3V" H 8365 923 50  0000 C CNN
-F 2 "" H 8350 750 50  0001 C CNN
-F 3 "" H 8350 750 50  0001 C CNN
-	1    8350 750 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R5
 U 1 1 5FAC0BF6
-P 8650 1250
-F 0 "R5" V 8550 1250 50  0000 C CNN
-F 1 "10k" V 8450 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8580 1250 50  0001 C CNN
-F 3 "~" H 8650 1250 50  0001 C CNN
-	1    8650 1250
+P 8250 1250
+F 0 "R5" V 8150 1250 50  0000 C CNN
+F 1 "10k" V 8050 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8180 1250 50  0001 C CNN
+F 3 "~" H 8250 1250 50  0001 C CNN
+	1    8250 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R9
 U 1 1 5FAC1BCC
-P 8350 1000
-F 0 "R9" H 8420 1046 50  0000 L CNN
-F 1 "10k" H 8420 955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8280 1000 50  0001 C CNN
-F 3 "~" H 8350 1000 50  0001 C CNN
-	1    8350 1000
+P 8800 1000
+F 0 "R9" H 8870 1046 50  0000 L CNN
+F 1 "6.65k" H 8870 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8730 1000 50  0001 C CNN
+F 3 "~" H 8800 1000 50  0001 C CNN
+	1    8800 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 1250 8350 1150
-Wire Wire Line
-	8500 1250 8350 1250
-Connection ~ 8350 1250
-Wire Wire Line
-	8350 750  8350 850 
-Text Notes 6900 2000 0    50   ~ 0
-compares sample and hold value vs a set voltage \nto partition map and provide 1 or 0
-Wire Wire Line
-	4200 4000 4850 4000
-Wire Wire Line
-	5650 4000 5450 4000
-Wire Wire Line
-	7950 1250 8350 1250
+	8800 1250 8800 1150
 Wire Wire Line
 	8950 1250 8800 1250
+Connection ~ 8800 1250
+Wire Wire Line
+	8800 750  8800 850 
+Text Notes 6350 1950 0    50   ~ 0
+compares sample and hold value vs a set voltage \nto partition map and provide 1 or 0
+Wire Wire Line
+	8400 1250 8800 1250
+Wire Wire Line
+	6800 1150 7350 1150
+Wire Wire Line
+	8100 1250 7950 1250
+Wire Wire Line
+	5350 4000 5850 4000
+Wire Wire Line
+	4700 4000 4200 4000
+Wire Wire Line
+	5000 4000 5350 4000
+Connection ~ 5350 4000
+$Comp
+L power:Va+ #PWR0125
+U 1 1 5FA83F64
+P 8800 750
+F 0 "#PWR0125" H 8800 600 50  0001 C CNN
+F 1 "Va+" H 8815 923 50  0000 C CNN
+F 2 "" H 8800 750 50  0001 C CNN
+F 3 "" H 8800 750 50  0001 C CNN
+	1    8800 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Va+ #PWR0137
+U 1 1 5FA84A7A
+P 5350 3450
+F 0 "#PWR0137" H 5350 3300 50  0001 C CNN
+F 1 "Va+" H 5365 3623 50  0000 C CNN
+F 2 "" H 5350 3450 50  0001 C CNN
+F 3 "" H 5350 3450 50  0001 C CNN
+	1    5350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Va+ #PWR0138
+U 1 1 5FA86489
+P 9700 2400
+F 0 "#PWR0138" H 9700 2250 50  0001 C CNN
+F 1 "Va+" H 9715 2573 50  0000 C CNN
+F 2 "" H 9700 2400 50  0001 C CNN
+F 3 "" H 9700 2400 50  0001 C CNN
+	1    9700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:V+ #PWR0139
+U 1 1 5FA86E99
+P 10000 2400
+F 0 "#PWR0139" H 10000 2250 50  0001 C CNN
+F 1 "V+" H 10015 2573 50  0000 C CNN
+F 2 "" H 10000 2400 50  0001 C CNN
+F 3 "" H 10000 2400 50  0001 C CNN
+	1    10000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5FA88476
+P 9700 2900
+F 0 "J1" V 9854 2712 50  0000 R CNN
+F 1 "Conn_01x03_Male" V 9763 2712 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9700 2900 50  0001 C CNN
+F 3 "~" H 9700 2900 50  0001 C CNN
+	1    9700 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 2400 10000 2550
+Wire Wire Line
+	10000 2550 9800 2550
+Wire Wire Line
+	9800 2550 9800 2700
+Wire Wire Line
+	9700 2400 9700 2700
+Wire Wire Line
+	9400 2550 9600 2550
+Wire Wire Line
+	9600 2550 9600 2700
+Wire Wire Line
+	9400 2400 9400 2550
+Text Notes 8600 2100 0    50   ~ 0
+put jumper to V+ if you want to use onboard voltage\nput jumper to Va+ if you want to use external voltage (Vext)
+Text Notes 6350 2200 0    50   ~ 0
+resistors are set up for Va+ at 3.3V
+$Comp
+L power:Va+ #PWR?
+U 1 1 5FB3CF2E
+P 9250 4750
+F 0 "#PWR?" H 9250 4600 50  0001 C CNN
+F 1 "Va+" H 9265 4923 50  0000 C CNN
+F 2 "" H 9250 4750 50  0001 C CNN
+F 3 "" H 9250 4750 50  0001 C CNN
+	1    9250 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
