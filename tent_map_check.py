@@ -39,31 +39,36 @@ fig1, ax1 = plt.subplots()
 fig2, ax2 = plt.subplots()
 
 
+t = arr[:, 0]
+vgnd = arr[:, 1]
+vc = arr[:, 2]
+vclck = arr[:, 3]
+
 trigger_voltage = 2.5
 last_vclock = 0
 x = []  # sampled vc values
 tSamp = []  # times that vc is sampled at (corresponds with x)
 
 # sample vc based on every vclk transition/edge
-for row in arr:
-    t = row[0]
-    vc = row[1]
-    vclock = row[2]
-    if (last_vclock > trigger_voltage and vclock <= trigger_voltage) or (
-        last_vclock <= trigger_voltage and vclock > trigger_voltage
+for i in range(len(arr)):
+    if (last_vclock > trigger_voltage and vclck[i] <= trigger_voltage) or (
+        last_vclock <= trigger_voltage and vclck[i] > trigger_voltage
     ):
-        x.append(vc)
-        tSamp.append(t)
+        x.append(vc[i])
+        tSamp.append(t[i])
 
-    last_vclock = vclock
+    last_vclock = vclck[i]
 
-t = arr[:, 0]
-vc = arr[:, 1]
-vclck = arr[:, 2]
+#move clock so graph is less cluttered
+vclck = vclck+0.05
 
-ax1.plot(t, vc)
-ax1.plot(t, vclck)
-ax1.plot(tSamp, x, "o")
+ax1.plot(t, vc, label='v(C)')
+ax1.plot(t, vgnd, label='v(gnd)')
+ax1.plot(t, vclck, label='clock')
+ax1.plot(tSamp, x, "o", label='sampled points')
+
+#create legend based on labels assigned in plots above
+ax1.legend()
 
 # plot best fit lines
 x = np.array(x)
@@ -153,11 +158,12 @@ plt.text(
 #         ax2.plot(v,vn1,'.b')
 
 
-ax1.set_xlabel("t (s)")
-ax1.set_ylabel("vc,vclck (volts)")
+ax1.set_xlabel("t [seconds]")
+ax1.set_ylabel("V(clock), V(capacitor), V(Gnd) [volts]")
 ax2.set_xlabel("vc_sample (v)")
 ax2.set_ylabel("vc_sample_n+1 (v)")
-ax2.set_title(basename(argv[1]))
-plt.savefig("plots/tent_map_plot_" + basename(argv[1]) + ".png", dpi=400)
-plt.close(fig1)
+ax2.set_title("")
+# plt.close(fig1)
 plt.show()
+fig2.savefig("plots/tent_map_plot_" + basename(argv[1]) + ".png", dpi=400)
+fig1.savefig("plots/waveform_plot_" + basename(argv[1]) + ".png", dpi=400)
